@@ -1,2 +1,2 @@
-# SF_OsTicketCucumberExamples
-OsTicket Application Cucumber Examples
+# osTicketCucumberExamples
+osTicket Support Ticket System
