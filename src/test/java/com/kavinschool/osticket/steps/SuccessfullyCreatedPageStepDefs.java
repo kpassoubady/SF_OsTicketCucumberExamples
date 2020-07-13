@@ -1,17 +1,18 @@
 package com.kavinschool.osticket.steps;
 
-import com.kavinschool.osticket.hooks.DriverFactory;
-import com.kavinschool.osticket.pages.SuccessfullyCreatedPage;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import com.kavinschool.osticket.hooks.DriverFactory;
+import com.kavinschool.osticket.pages.SuccessfullyCreatedPage;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.When;
+
 public class SuccessfullyCreatedPageStepDefs {
 
     private WebDriver driver;
-    private  SuccessfullyCreatedPage successfullyCreatedPage;
+    private SuccessfullyCreatedPage successfullyCreatedPage;
 
     public SuccessfullyCreatedPageStepDefs(DriverFactory driverFactory) {
         driver = driverFactory.getDriver();

@@ -1,16 +1,14 @@
 package com.kavinschool.osticket.steps;
 
-import com.kavinschool.osticket.hooks.DriverFactory;
-import com.kavinschool.osticket.pages.OpenNewTicketPage;
-import com.kavinschool.osticket.utils.DriverUtils;
-import cucumber.api.PendingException;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import java.lang.reflect.Method;
+import com.kavinschool.osticket.hooks.DriverFactory;
+import com.kavinschool.osticket.pages.OpenNewTicketPage;
+import com.kavinschool.osticket.utils.DriverUtils;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class OpenNewTicketPageStepDefs {
 
@@ -38,10 +36,10 @@ public class OpenNewTicketPageStepDefs {
         String actualLabel = openNewTicketPage.getNameLabel();
         Assert.assertEquals(expectedLabel, actualLabel);
 
-        
+
         String screenShotfileName = driverUtils.getScreenShotFileName(this.getClass().getName(),
                 "iCheckedTheFullNameLabelExist");
-         driverFactory.getScenario().embed(driverUtils.saveScreenShotTo(screenShotfileName), "image/png");
+        driverFactory.getScenario().embed(driverUtils.saveScreenShotTo(screenShotfileName), "image/png");
     }
 
     @Then("^I type first name \"([^\"]*)\" value$")

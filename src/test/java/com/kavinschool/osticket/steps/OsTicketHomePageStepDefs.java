@@ -1,17 +1,17 @@
 package com.kavinschool.osticket.steps;
 
-import com.kavinschool.osticket.hooks.DriverFactory;
-import com.kavinschool.osticket.pages.SupportCenterHomePage;
-import com.kavinschool.osticket.utils.DriverUtils;
-import cucumber.api.PendingException;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+
+import com.kavinschool.osticket.hooks.DriverFactory;
+import com.kavinschool.osticket.pages.SupportCenterHomePage;
+import com.kavinschool.osticket.utils.DriverUtils;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class OsTicketHomePageStepDefs {
 
