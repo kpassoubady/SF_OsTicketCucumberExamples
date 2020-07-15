@@ -55,6 +55,7 @@ public class DriverFactory {
     private static final Boolean LOCAL_CAPS_ON = true;
     private static final Boolean FIREFOX_PROFILE_ENABLED = false;
     private static final String FIREFOX_PROFILE_PATH = "";
+
     private static boolean isBrowserExist = false;
 
     /**
